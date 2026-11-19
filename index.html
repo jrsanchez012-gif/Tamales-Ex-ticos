@@ -2,15 +2,14 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Venta de Tamales Exóticos Benel y Juanito en la Ciudad de México">
+  <meta name="description" content="Venta de Tamales Exóticos Belen y Juanito en la Ciudad de México">
   <meta name="keywords" content="Josué Sánchez, Tamales, Tamales Exóticos, Comida Ciudad de México, Exótico, Belen. Juanito, Belen y Juanito">
   <meta name="author" content="Josué Sánchez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/style.css"
-<title>Tamales Exoticos Belen y Juanito / Josué Sánchez</title>
-
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Tamales Exoticos Belen y Juanito / Josué Sánchez</title>
 </head>
 <!--AQUÍ INICIA EL CUERPO DE MI PAGINA-->
 <body>
@@ -19,58 +18,125 @@
     <header class="header-TamalesJS">
         <div class="container header-inicio">
             <a href="index.html" class="logo-Tamales">
-            <img src="IMG/Logo.png" alt="logo de Tamales exóticos">
-
+              <img src="IMG/Logo.png" alt="logo de Tamales exóticos">
             </a>
-        <nav class="Tamales-Exóticos-Belen-y-Juanito">
-
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#Sobre nosotros">Sobre nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quisiera conocer acerca sobre tus tamales, precios y/o servicios')">
-          <i data-lucide="message-circle"></i> Enviar Mensaje 
-        </button>
-        </nav>
+            <nav class="Tamales-Exóticos-Belen-y-Juanito">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#Sobre nosotros">Sobre nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quisiera conocer acerca sobre tus tamales, precios y/o servicios')">
+                  <i data-lucide="message-circle"></i> Enviar Mensaje 
+                </button>
+            </nav>
         </div>
     </header>
 
-<!--CONTENIDO PRINCIPAL-->
-    <main> 
+<!--===============CONTENIDO PRINCIPAL===================-->
 
-<!--SECCIÓN DEL HERO-->
-
-<section id="inicio" class="hero">
-      <div class="container hero-inicio">
-        <div class="hero-text">
-          <p class="eyebrow">Detalles que hacen sonreír</p>
-          <h1>Tu negocio merece estar en Internet</h1>
-          <p class="lead">Promociona tus productos, recibe pedidos y haz que tus clientes te encuentren desde cualquier lugar.</p>
+<main> 
 
 
-          <div class="hero-actions">
-            <a href="#productos" class="btn primary">Ver productos</a>
-            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
-          </div>
+<!--===============SECCIÓN DEL HERO=================-->
+  <section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">Cocina artesanal desde 1990</p>
+      <h1 class="intro-title" id="intro-title">Tamales exóticos<br><span>que conquistan al primer bocado...</span></h1>
+      <p class="intro-description">Ingredientes selectos y combinaciones únicas hechas al momento en la Ciudad de México.</p>
+  </section>
+<!--===============Aquí vamos a colocar el video y las 2 imagenes=================-->
+
+  <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
 
 
-          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="IMG/VideoTamal.mp4"
+          aria-label="Video de presentación">
+          <source src="IMG/VideoTamal.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+       <div class="media-card__content">
+          <p class="media-card__number">01 / EN LA VAPORERA</p>
+          <h2 class="media-card__title">EL ARTE DEL<br>TAMAL EXÓTICO</h2>
+          <a class="media-card__link" href="#productos">Ver menú <span aria-hidden="true">↗</span></a>
         </div>
 
 
-        <div class="hero-imagen">
-          <img src="XXX" alt="XXXXX">
-          <span class="tag tag-love">Hecho con cariño</span>
-          <span class="tag tag-custom">Pedidos personalizados</span>
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="IMG/tamal6.jpg"
+          alt="Tamal exótico de maíz morado "
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+        <div class="media-card__content">
+          <p class="media-card__number">02 / ESPECIALIDADES</p>
+          <h2 class="media-card__title">MAÍZ AZUL<br>Y RELLENOS ÚNICOS</h2>
+          <a class="media-card__link" href="#productos">Explorar sabores <span aria-hidden="true">↗</span></a>
         </div>
-      </div>
+        </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="IMG/tamal4.jpg"
+          alt="Tamal dulce de chocolate con miel y almendras"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+        <div class="media-card__content">
+          <p class="media-card__number">03 / DULCE TENTACIÓN</p>
+          <h2 class="media-card__title">CHOCOLATE,<br>MIEL Y ALMENDRAS</h2>
+          <a class="media-card__link" href="#contacto">Hacer pedido <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+<!--Footer ó pie de página-->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> Tamales exóticos Belen y Juenito. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
     </section>
+</main>
 
-    <h1>Tradición que sorprende en cada hoja</h1>
-    <p>Tamales exóticos Belen y Juanito</p>
 
-    </main>
+
 </body>
-</html> 
+</html>
