@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--JOSUÉ SÁNCHEZ-ENTREGABLE 2-->
 <html>
 <head>
   <meta charset="UTF-8">
@@ -68,11 +68,10 @@
         </video>
 
 
-        <!-- Capa oscura que permite leer el texto sobre el video -->
+<!-- Capa oscura que permite leer el texto sobre el video -->
         <div class="media-card__shade" aria-hidden="true"></div>
 
-
-        <!-- Texto que aparece sobre el panel -->
+<!-- Texto que aparece sobre el panel -->
        <div class="media-card__content">
           <p class="media-card__number">01 / EN LA VAPORERA</p>
           <h2 class="media-card__title">EL ARTE DEL<br>TAMAL EXÓTICO</h2>
@@ -80,63 +79,131 @@
         </div>
 
 
-        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+<!-- Control visible en pantallas táctiles y accesible con teclado -->
         <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
           <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
           <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
         </button>
       </article>
 
-
-      <!--  IMAGEN 1-->
+   <!--  IMAGEN 1-->
       <article class="media-card">
-        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
-        <img
-          class="media-card__media media-card__image"
-          src="IMG/tamal6.jpg"
-          alt="Tamal exótico de maíz morado "
-          loading="lazy">
-
-
-        <div class="media-card__shade" aria-hidden="true"></div>
-
-        <div class="media-card__content">
-          <p class="media-card__number">02 / ESPECIALIDADES</p>
-          <h2 class="media-card__title">MAÍZ AZUL<br>Y RELLENOS ÚNICOS</h2>
-          <a class="media-card__link" href="#productos">Explorar sabores <span aria-hidden="true">↗</span></a>
-        </div>
-        </article>
-
-
-      <!--  IMAGEN 2-->
-      <article class="media-card">
-        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
         <img
           class="media-card__media media-card__image"
           src="IMG/tamal4.jpg"
-          alt="Tamal dulce de chocolate con miel y almendras"
+          alt="TamalChocolate"
           loading="lazy">
-
-
         <div class="media-card__shade" aria-hidden="true"></div>
-
         <div class="media-card__content">
           <p class="media-card__number">03 / DULCE TENTACIÓN</p>
           <h2 class="media-card__title">CHOCOLATE,<br>MIEL Y ALMENDRAS</h2>
           <a class="media-card__link" href="#contacto">Hacer pedido <span aria-hidden="true">↗</span></a>
         </div>
+  </article>
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <img
+          class="media-card__media media-card__image"
+          src="IMG/tamal6.jpg"
+          alt="Tamalmaizazul"
+          loading="lazy">
+          <div class="media-card__shade" aria-hidden="true"></div>
+          <div class="media-card__content">
+          <p class="media-card__number">02 / ESPECIALIDADES</p>
+          <h2 class="media-card__title">MAÍZ AZUL<br>Y RELLENOS ÚNICOS</h2>
+          <a class="media-card__link" href="#productos">Explorar sabores <span aria-hidden="true">↗</span></a>
+        </div>
       </article>
+    </section>
+<!--SECCIÓN PRODUCTOS Y SERVICIOS-->
+        <section id="productos" class="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contigo desde 1990</p>
+          <h2>Tamales tradicionales hechos con amor</h2>
+          <p class="lead">Echa un vistazo a nuestros productos más cotizados</p>
+        </div> 
+      <!-- PRODUCTO 1- TARJETA-->
+       <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="IMG/Tamal1.jpg" alt="TamalOnigiri">
+            <div class="product-body">
+              <span class="tag">Edición Limitada</span>
+              <h3>Tamal Onigiri</h3>
+              <p class="price">$30 c/u</p>
+              <p class="description">Fusión japonesa envuelta en hoja de maíz con relleno jugoso de carne y vegetales.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+        <!-- PRODUCTO 2- TARJETA-->
+          <article class="product-card reveal">
+            <img src="IMG/tamal2.jpg" alt="TamalColombiano">
+            <div class="product-body">
+              <span class="tag">Especialidad</span>
+              <h3>Tamal Colombiano</h3>
+              <p class="price">$40 c/u</p>
+              <p class="description">Envuelto en hoja de plátano con carne, papa, zanahoria, huevo cocido y queso.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+        <!-- PRODUCTO 3- TARJETA-->
+          <article class="product-card reveal">
+            <img src="IMG/tamal3.jpg" alt="Tamaldemole">
+            <div class="product-body">
+              <span class="tag">Favorito</span>
+              <h3>Tamal de Mole</h3>
+              <p class="price">$32 c/u</p>
+              <p class="description">Bañado en mole artesanal con plátano macho frito, cebolla morada y queso fresco.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+        <!-- PRODUCTO 4- TARJETA-->
+          <article class="product-card reveal">
+            <img src="IMG/tamal4.jpg" alt="Tamaldechocolate">
+            <div class="product-body">
+              <span class="tag">Dulce</span>
+              <h3>Tamal de Chocolate</h3>
+              <p class="price">$30 c/u</p>
+              <p class="description">Masa de cacao artesanal con coco rallado, nuez, chispas de chocolate y caramelo.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+        <!-- PRODUCTO 5- TARJETA-->
+          <article class="product-card reveal">
+            <img src="IMG/tamal5.jpg" alt="Torta de Tamal">
+            <div class="product-body">
+              <span class="tag">Clásico CDMX</span>
+              <h3>Torta de Tamal</h3>
+              <p class="price">$35 c/u</p>
+              <p class="description">La tradicional guajolota en bolillo crujiente con tamal calientito y salsa verde.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+        <!-- PRODUCTO 6- TARJETA-->
+          <article class="product-card reveal">
+            <img src="IMG/tamal6.jpg" alt="Tamal de maíz azul">
+            <div class="product-body">
+              <span class="tag">Artesanal</span>
+              <h3>Tamal de Maíz Azul</h3>
+              <p class="price">$35 c/u</p>
+              <p class="description">Masa nixtamalizada de maíz morado en hoja roja, acompañado de aguacate y quelites.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+
+           </div>
+        </div>
+     </section>
+
+
+</main>
 
 <!--Footer ó pie de página-->
   <footer class="site-footer">
     <p>© <span id="current-year"></span> Tamales exóticos Belen y Juenito. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
-
-    </section>
-</main>
-
-
 
 </body>
 </html>
