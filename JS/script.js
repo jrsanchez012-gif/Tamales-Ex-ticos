@@ -145,3 +145,36 @@ videoCards.forEach((card) => {
     }
   });
 });
+/*Modal configuraciones, abre el modal de un producto y bloquea el scroll del fondo*/
+let lastFocusedElement = null;
+function openModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  lastFocusedElement = document.activeElement;
+  modal.classList.add("is-open");
+  document.body.style.overflow = "hidden";
+  const closeButton = modal.querySelector(".modal-close");
+  if (closeButton) closeButton.focus();
+}
+
+function closeModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.remove("is-open");
+  document.body.style.overflow = "";
+  if (lastFocusedElement) lastFocusedElement.focus();
+}
+
+// Cerrar el modal de un producto y devuelve 
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal") && e.target.classList.contains("is-open")) {
+    closeModal(e.target.id);
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    const openModalEl = document.querySelector(".modal.is-open");
+    if (openModalEl) closeModal(openModalEl.id);
+  }
+});
